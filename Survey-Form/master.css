@@ -1,0 +1,79 @@
+body {
+  background-image: linear-gradient(-45deg, #96c2f0, #a896f0, #c39bd3);
+}
+
+#title-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  font-family: Libre Baskerville;
+  font-weight: bold;
+}
+
+p {
+  font-family: monospace !important;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
+#form-container {
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  width: 50%;
+  height: auto;
+  margin: 55px auto 5px auto;
+  background-color: #291D59;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.85;
+}
+
+#form-container label {
+  display: block;
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  margin-bottom: 3px;
+  font-family: Rubik;
+  color: #D7F1FA;
+}
+
+.field {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  width: 92%;
+  padding: 10px;
+  border-radius: 5px;
+  border-style: none;
+  opacity: 0.9;
+}
+
+#skills input {
+  margin-left: 2.5%;
+  display: inline-block;
+}
+
+#skills {
+  color: #D7F1FA;
+  font-family: Rubik;
+}
+
+#gender {
+  color: #D7F1FA;
+  font-family: Rubik;
+}
+
+#gender input {
+  margin-left: 2.5%;
+}
+
+#submit {
+  margin-bottom: 2.5%;
+  width: 95%;
+}
+
+#dropdown {
+  width: 95%;
+  background: white;
+  color: gray;
+}

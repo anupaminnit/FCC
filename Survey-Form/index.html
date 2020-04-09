@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" type="text/css">
+  <title>Survey</title>
+</head>
+
+<body>
+  <div id="title-container">
+    <h1 id="title">Your Survey Form</h1>
+    <p id="description">Tell me about yourself</p>
+  </div>
+  <div id="form-container">
+    <form action="/submit-form-details">
+      <label for="name">
+        Name
+      </label>
+      <input class="field" id="name" type="text" name="inputName" placeholder="Enter Your Name" required>
+      <label for="email">
+        Email
+      </label>
+      <input class="field" id="email" type="email" name="inputEmail" placeholder="Enter Your Email" required>
+      <label for="number">
+        Age (Between 18 and 30)
+      </label>
+      <input class="field" id="number" type="number" name="inputPhone" min="18" max="30" placeholder="Enter Your Age">
+      <label for="dropdown">
+        Current Employment Status
+      </label>
+      <select class="field" id="dropdown" name="inputJob">
+        <option value="" disabled selected>Select Your Option</option>
+        <option value="Student">Student</option>
+        <option value="Private Sector">Private Job</option>
+        <option value="Govt.Sector">Govt.Job</option>
+        <option value="Business">Business</option>
+        <option value="Other">Other</option>
+      </select>
+      <label class="button-container" for="gender">
+        Enter Your Gender
+      </label>
+      <div id="gender" class="buttons">
+        <input type="radio" name="gender" value="inputMale">Male
+        <br>
+        <input type="radio" name="gender" value="inputFemale">Female
+        <br>
+        <input type="radio" name="gender" value="inputOther">Other
+      </div>
+      <label class="button-container" for="skills">
+        Your Skills
+      </label>
+      <div id="skills" class="buttons">
+        <input type="checkbox" name="skills" value="inputC">C Lang
+        <br>
+        <input type="checkbox" name="skills" value="inputC++">C++
+        <br>
+        <input type="checkbox" name="skills" value="inputJava">Java
+        <br>
+        <input type="checkbox" name="skills" value="inputPython">Python
+      </div>
+      <label for="textarea">
+        Any suggestions?
+      </label>
+      <textarea class="field" id="textarea" rows="6" cols="5" placeholder="Enter Your Suggestions Here"></textarea>
+      <label for="submit"></label>
+      <input class="field" id="submit" type="submit">
+    </form>
+  </div>
+</body>
+
+</html>
